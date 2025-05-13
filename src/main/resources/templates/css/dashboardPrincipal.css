@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 2px solid #ddd; /* Borde gris claro */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-clip: padding-box; /* Asegura que el fondo no se superponga al borde */
+}
+
+.room.ready {
+    background-color: #142533; /* Verde para habitaciones listas */
+}
+
+.room.not-ready {
+    background-color: #331414; /* Rojo para habitaciones no listas */
+}
